@@ -1,0 +1,92 @@
+<html>
+<head>
+<link rel="icon" href="Dicon.png">
+</head>
+<body style="background-color:#E6E6E6">
+
+<img src="D1.jpg" height="70" width="120" align="left">
+<br>
+<center><h1 style="color:#330000; font-family:ALGERIAN;font-size:35px">Login form</h1></center>
+<style>
+body {font-family: AR CENA; font-size: 25px;}
+form {border: 2px solid #6E6767;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #330000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 15%;
+  border-radius: 50%;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.password {
+     display: block;
+     float: none;
+  }
+
+</style>
+
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="Avatar.jpg" alt="Avatar" class="avatar">
+  </div>
+  
+<br>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" value="" id="myInput" name="password" required>
+	<input type="checkbox" onclick="myFunction()">Show Password
+	<Script>
+	function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+<br><br>
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me 
+    </label>
+  </div>
+<center><a href="forgot.html" target="_blank">Forgot password?</a></center>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<html>
+<head>
+<link rel="icon" href="Dicon.png">
+</head>
+<style>
+body {font-family: AR CENA; font-size: 25px;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #F1F1F1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #330000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.complaintbtn {
+  float: left;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+</style>
+<body style="background-color:#E6E6E6">
+<img src="D1.jpg" height="70" width="120" align="left">
+<h1>Complaint</h1>
+<form action="/action_page.php" style="border:2px solid #6E6767">
+  <div class="container">
+    <p>Fill in a complaint.</p>
+    <hr>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="subject"><b>Subject</b></label>
+    <input type="text" placeholder="Enter a subject" name="subject" required>
+
+    <label for="description"><b>Description</b></label>
+    <input type="text" placeholder="Explain clearly about your issue and we will try our best to improve.." name="description" required>
+    
+    <div class="clearfix">
+      <button type="submit" class="complaintbtn">Submit</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>

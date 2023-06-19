@@ -1,0 +1,25 @@
+<?php
+session_start();
+include("db.php");
+
+$message=$_POST["message"];
+
+$username=$_SESSION['user'];
+
+$sqlselect="select * from Customer where Cust_Username='$username' ";
+$retrieve=sqlsrv_query($conn, $sqlselect);
+$row=sqlsrv_fetch_array($retrieve);
+$id=$row["CustomerID"];
+if($retrive)
+
+$insert= "insert into Feedback_Description, DriverScore, CustomerID) values ('$message', '0', '$id')";
+
+$input=sqlsrv_query($conn, $insert);
+if ($input=true)
+
+(
+   echo "<script>alert('Feedback successfully submitted');
+window.location.href='index.php'</script>;";
+)
+)
+?>

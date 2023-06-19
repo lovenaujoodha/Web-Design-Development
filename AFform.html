@@ -1,0 +1,531 @@
+<html>
+<head>
+<link rel="stylesheet" href="Form.css">
+<link rel="icon" href="Dicon.png">
+</head>
+
+<body style="background-color:#E6E6E6"">
+
+<img src="D1.jpg" height="70" width="120" align="left">
+
+<br>
+<center><h1 style="color:#330000; font-family:ALGERIAN;font-size:35px">Adoption/Fostering form</h1></center>
+<form action="" class="sky-form" style="" novalidate="novalidate" >
+        <div id="mydiv">
+
+			 <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">Name:</span>
+                <label class="input">
+				<p><input placeholder="First name..." oninput="this.className = ''" name="fname" required></p><br>
+                <p><input placeholder="Last name..." oninput="this.className = ''" name="lname" required></p>
+                </label>
+            </section>
+        </div>
+             </fieldset>
+			 
+			 <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">Address:</span>
+                <label class="input">
+				<p><input placeholder="Street address" oninput="this.className = ''" name="streetAddress" required></p><br>
+                <p><input placeholder="City" oninput="this.className = ''" name="city" required></p><br>
+	            <p><input placeholder="Postal code" oninput="this.className = ''" name="postalCode" required></p><br>
+                <p><input placeholder="Country" oninput="this.className = ''" name="country" required></p>
+                </label>
+            </section>
+        </div>
+             </fieldset>
+			 
+			 <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;" required>Contact info:</span>
+                <label class="input">
+				<p><input placeholder="E-mail..." oninput="this.className = ''" name="email" required></p><br>
+                <p><input placeholder="Phone..." oninput="this.className = ''" name="phone" required></p>
+                </label>
+            </section>
+        </div>
+             </fieldset>
+
+			  <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">I wish to</span>
+                <input type="hidden" id="checkbx_val" value="reqdchkbox" required>
+    <span class="chkbx_wrap">
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_212591" type="radio" id="multi_0" value="adopt">
+            <i></i> Adopt a dog
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_212591" type="radio" id="multi_1" value="foster">
+            <i></i> Foster a dog
+            </span>
+            </section>
+        </div>
+    </fieldset>
+	
+	<fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+				<span class="ques_title" style="font-size:15px;">For how many weeks would you like to foster the dog?</span>
+                <label class="select">
+            <select id="question_valdropdown191844" class="question_dropdown required" name="question_valdropdown_191844" required>
+            <option value="">--Select--</option>
+                    <option value="Low">One week</option>
+                    <option value="Moderate">Two weeks</option>
+                    <option value="Active">Three weeks</option>
+            </select>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+    </fieldset>
+	
+            
+			 <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">Ref No</span>
+                <label class="input">
+				<p><input placeholder="Enter ref No of dog you want to adopt or foster" oninput="this.className = ''" name="RefNo" required></p>
+                </label>
+				<div style="margin-top:6px;" class="note note-error">Click here to choose a dog: <a href ="adopt.html" target="_blank">Adopt/foster</a></div>
+            </section>
+        </div>
+             </fieldset>
+	
+
+                <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">What is your household's general noise and activity level?</span>
+                <label class="select">
+            <select id="question_valdropdown191844" class="question_dropdown required" name="question_valdropdown_191844" required>
+            <option value="">--Select--</option>
+                    <option value="Low">Low</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Active">Active</option>
+                    <option value="Very Active">Very Active</option>
+            </select>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">Housing Type</span>
+                <label class="select">
+            <select id="question_valdropdown191843" class="question_dropdown required" name="question_valdropdown_191843" required>
+            <option value="">--Select--</option>
+                    <option value="House">House</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Townhouse">Townhouse</option>
+                    <option value="Dorm">Dorm</option>
+                    <option value="Mobile Home">Mobile Home</option>
+                    <option value="Other">Other</option>
+            </select>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+	<fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">Housing</span>
+                <label class="select">
+            <select id="question_valdropdown191842" class="question_dropdown required" name="question_valdropdown_191842" required>
+            <option value="">--Select--</option>
+                    <option value="Own">Own</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Live with Parents">Live with Parents</option>
+                    <option value="Live with Roommates">Live with Roommates</option>
+            </select>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+	
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">Name and ages of all people in your household</span>
+                <label class="textarea">
+                <textarea style="margin-bottom:9px" id="question_valpara_191841" class="questype_paragh required" name="question_valpara_191841" required></textarea>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">Are your other pets spayed/neutered</span>
+                <label class="input">
+    <input type="text" id="question_valtext_219645" class="questype_text required" name="question_valtext_219645" value="">
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">Within which age group do you fall?</span>
+                <input type="hidden" id="checkbx_val" value="reqdchkbox" required>
+<span class="chkbx_wrap">
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_212591" type="radio" id="multi_0" value="Under 18">
+            <i></i> Under 18
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_212591" type="radio" id="multi_1" value="18-29">
+            <i></i> 18-29
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_212591" type="radio" id="multi_2" value="30-44">
+            <i></i> 30-44
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_212591" type="radio" id="multi_3" value="45-60">
+            <i></i> 45-60
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_212591" type="radio" id="multi_4" value="61-70">
+            <i></i> 61-70
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_212591" type="radio" id="multi_5" value="71 and over">
+            <i></i> 71 and over
+        </label>
+    </span>
+                <div style="margin-top:6px;" class="note note-error">All applicants must be 18 years of age or older</div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">If you rent, please list your landlord's name, phone number and email address.</span>
+                <label class="textarea">
+                <textarea style="margin-bottom:9px" id="question_valpara_290267" class="questype_paragh " name="question_valpara_290267"></textarea>
+                </label>
+                <div style="margin-top:6px;" class="note note-error">We will need a copy of your lease stating that you are allowed to keep a pet.</div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">Please describe your home. Where will your animal have access to?</span>
+                <label class="textarea">
+                <textarea style="margin-bottom:9px" id="question_valpara_290271" class="questype_paragh required" name="question_valpara_290271"></textarea>
+               </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">Do you have a yard? If so, is it securely fenced/height of fence?</span>
+                <label class="textarea">
+                <textarea style="margin-bottom:9px" id="question_valpara_158641" class="questype_paragh required" name="question_valpara_158641"></textarea>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">To facilitate a successful match, please tell us a little about yourself</span>
+                <input type="hidden" id="checkbx_val" value="reqdchkbox">
+<span class="chkbx_wrap">
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_152389" type="checkbox" id="multi_0" value="Have never had a dog before">
+            <i></i> Have never had a dog before
+            </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_152389" type="checkbox" id="multi_1" value="Grew up with dogs">
+            <i></i> Grew up with dogs
+            </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_152389" type="checkbox" id="multi_2" value="Have had one or two dogs as an adult">
+            <i></i> Have had one or two dogs as an adult
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_152389" type="checkbox" id="multi_3" value="Have had many dogs as an adult">
+            <i></i> Have had many dogs as an adult
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_152389" type="checkbox" id="multi_4" value="This will be my first dog as an adult">
+            <i></i> This will be my first dog as an adult
+        </label>
+    </span>
+                <div style="margin-top:6px;" class="note note-error">Which best describes you:</div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">My dog needs to be able to be alone:</span>
+                <input type="hidden" id="checkbx_val" value="reqdchkbox">
+<span class="chkbx_wrap">
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_151408" type="radio" id="multi_0" value="9+hrs/day">
+            <i></i> 9+hrs/day
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_151408" type="radio" id="multi_1" value="7-9 hrs/day">
+            <i></i> 7-9 hrs/day
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_151408" type="radio" id="multi_2" value="4-6 hrs/day">
+            <i></i> 4-6 hrs/day
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_151408" type="radio" id="multi_3" value="Less than 4 hrs/day">
+            <i></i> Less than 4 hrs/day
+        </label>
+    </span>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">I need my dog to get along with:</span>
+                <input type="hidden" id="checkbx_val" value="reqdchkbox">
+<span class="chkbx_wrap">
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_151416" type="checkbox" id="multi_0" value="Dogs">
+            <i></i> Dogs
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_151416" type="checkbox" id="multi_1" value="Cats">
+            <i></i> Cats
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_151416" type="checkbox" id="multi_2" value="Children">
+            <i></i> Children
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_151416" type="checkbox" id="multi_3" value="Family">
+            <i></i> Family
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_151416" type="checkbox" id="multi_4" value="Everyone">
+            <i></i> Everyone
+        </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_151416" type="checkbox" id="multi_5" value="Other">
+            <i></i> Other
+        </label>
+    </span>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+	
+	<fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+
+            <section>
+                <span class="ques_title" style="font-size:15px;">Activity Level and Personality Traits</span>
+                <input type="hidden" id="checkbx_val" value="reqdchkbox">
+<span class="chkbx_wrap">
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_145889" type="checkbox" id="multi_0" value="Total Jock - High activity ">
+            <i></i> Total Jock - High activity 
+            </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_145889" type="checkbox" id="multi_1" value="Weekend Warrior - Medium activity">
+            <i></i> Weekend Warrior - Medium activity
+            </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_145889" type="checkbox" id="multi_2" value="Couch Potato - Low activity">
+            <i></i> Couch Potato - Low activity
+        </label>
+    </span>
+                <div style="margin-top:6px;" class="note note-error">What type of dog fits your activity level? Daily short walks, weekend hikes, daily runs, backyard only?</div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">How long will you allow for your new pet to adjust to your home?</span>
+                <label class="textarea">
+                <textarea style="margin-bottom:9px" id="question_valpara_152391" class="questype_paragh required" name="question_valpara_152391"></textarea>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">What will you do to provide mental stimulation and exercise for your dog?</span>
+                <label class="input">
+            <input type="text" id="question_valtext_152392" class="questype_text required" name="question_valtext_152392" value="">
+            </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">What training methods will you use with your new dog?</span>
+                <label class="textarea">
+                <textarea style="margin-bottom:9px" id="question_valpara_152393" class="questype_paragh required" name="question_valpara_152393"></textarea>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">If you were no longer able to care for your dog, what options do you have?</span>
+                <label class="input">
+                <input type="text" id="question_valtext_145894" class="questype_text required" name="question_valtext_145894" value="">
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">Have you ever had a pet euthanized?</span>
+                <input type="hidden" id="checkbx_val" value="reqdchkbox">
+<span class="chkbx_wrap">
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_212600" type="radio" id="multi_0" value="Yes">
+            <i></i> Yes
+            </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_212600" type="radio" id="multi_1" value="No">
+            <i></i> No
+            </label>
+    </span>
+                <div style="margin-top:6px;" class="note note-error">(For reasons other than health or old age)</div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">Have you ever surrendered a pet? If so, why?</span>
+                <label class="textarea">
+                <textarea style="margin-bottom:9px" id="question_valpara_269486" class="questype_paragh required" name="question_valpara_269486"></textarea>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">My new dog will live</span>
+                <input type="hidden" id="checkbx_val" value="reqdchkbox">
+<span class="chkbx_wrap">
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_152329" type="radio" id="multi_0" value="About Half and Half">
+            <i></i> About Half and Half
+            </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_152329" type="radio" id="multi_1" value="Indoors">
+            <i></i> Indoors
+            </label>
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_152329" type="radio" id="multi_2" value="Outdoors">
+            <i></i> Outdoors
+            </label>
+    </span>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">Do you have a veterinarian? 	  Please list name of vet or Animal Hospital</span>
+                <label class="textarea">
+                <textarea style="margin-bottom:9px" id="question_valpara_279773" class="questype_paragh required" name="question_valpara_279773"></textarea>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">What do you enjoy about having a dog?</span>
+                <label class="textarea">
+    <textarea style="margin-bottom:9px" id="question_valpara_270709" class="questype_paragh required" name="question_valpara_270709"></textarea>
+</label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+            <section>
+                <span class="ques_title" style="font-size:15px;">What are (or do you want to be) your favorite activities with a dog?</span>
+                <label class="textarea">
+                <textarea style="margin-bottom:9px" id="question_valpara_270708" class="questype_paragh required" name="question_valpara_270708"></textarea>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">How much have you budgeted for yearly care of your dog?</span>
+                <label class="input">
+                <input type="text" id="question_valtext_151417" class="questype_text required" name="question_valtext_151417" value="">
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">Is there anything else you think is important for evaluating your application?</span>
+                <label class="textarea">
+                <textarea style="margin-bottom:9px" id="question_valpara_266032" class="questype_paragh required" name="question_valpara_266032"></textarea>
+                </label>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+
+    <fieldset style="border-top: 1px solid rgba(0,0,0,.1);">
+           <section>
+                <span class="ques_title" style="font-size:15px;">I agree to provide proof of ownership of my home or proof of permission to have an animal in my rental when I visit AORD in attempt to adopt an animal .</span>
+                <input type="hidden" id="checkbx_val" value="reqdchkbox">
+<span class="chkbx_wrap">
+            <label class="checkbox">
+            <input class="chkbx_cls reqdchkbox" name="quesValcheck_315806" type="checkbox" id="multi_0" value="I Agree">
+            <i></i> I Agree
+	        <br><br>
+            </label>
+			<input class="" id="terms_conditions" name="terms_conditions" type="checkbox" value=""><span style="color:red;">*</span>I have read and agree to the <a target="_blank" href="TermsAndPrivacy.html">Terms and Privacy Policy</a>
+    </span>
+                <div style="margin-top:6px;" class="note note-error"></div>
+            </section>
+        </div>
+    </fieldset>
+                <input type="hidden" id="chkbox_num" value="">
+            </div>
+            <footer style="padding : 15px 0 25px;">         
+                    <input type="button" id="" class="button" style="margin-right:30px;background-color:#8b0000" value="Submit Application"> 
+			</footer>		
+        </form>
+    </div>
+</body>
+</html>
